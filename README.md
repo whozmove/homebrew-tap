@@ -26,3 +26,8 @@ claude plugin marketplace remove whozmove
 
 The first line takes the app, its login item and its folder; the other two take its hooks out of Claude Code (or use
 `/plugin` in a Claude Code session). A plain `brew uninstall --cask whozmove` leaves the login item and the folder.
+
+## Licence
+
+The cask is shared under the BSD 2-Clause licence ([LICENSE](LICENSE)), as Homebrew's own are. Whozmove itself is free
+software under the GNU GPL, version 3 or later.
