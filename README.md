@@ -9,10 +9,9 @@ Mac, with what each is doing and whose move it is.
 brew install --cask whozmove/tap/whozmove
 ```
 
-Whozmove isn't signed by Apple yet, so macOS stops it the first time you open it: go to System Settings › Privacy &
-Security and press **Open Anyway**, once. Whozmove then sets itself up, adding its hooks to Claude Code and opening
-at every login (turned off and on with **Open at Login** in its menu). Needs a Mac with Apple silicon and macOS 13 or
-later, and, for the hooks, Apple's command line developer tools (`xcode-select --install`).
+Then open it. Whozmove sets itself up, adding its hooks to Claude Code and opening at every login (turned off and on
+with **Open at Login** in its menu). Needs a Mac with Apple silicon and macOS 15 or later, and, for the hooks, Apple's
+command line developer tools (`xcode-select --install`).
 
 `brew upgrade` brings each new version.
 

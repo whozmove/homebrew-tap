@@ -1,6 +1,6 @@
 cask "whozmove" do
-  version "0.2.0"
-  sha256 "d3d855bcde955f4b35263559d2242ede198e96c2786eeeda74cb3c9ebc6a7e03"
+  version "0.3.0"
+  sha256 "2835f022807b0ded48b63b637f987bc57d54f434c2c1d3f5a8738cc50351818d"
 
   url "https://github.com/whozmove/whozmove/releases/download/v#{version}/Whozmove-#{version}.zip"
   name "Whozmove"
@@ -13,8 +13,7 @@ cask "whozmove" do
   end
 
   depends_on arch: :arm64
-  # Claude Code, whose sessions Whozmove follows, needs macOS 13 or later.
-  depends_on macos: :ventura
+  depends_on macos: :sequoia
 
   app "Whozmove.app"
 
@@ -31,9 +30,6 @@ cask "whozmove" do
       ]
 
   caveats <<~EOS
-    Whozmove isn't signed by Apple yet, so macOS stops it the first time you open it.
-    Go to System Settings > Privacy & Security and press Open Anyway.
-
     Its hooks, which show what each Claude Code session is doing, run on Apple's
     command line developer tools. If they aren't installed: xcode-select --install
 
